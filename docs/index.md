@@ -53,7 +53,7 @@ Follow installation instructions for [react-native-reanimated](https://github.co
 import React, { useCallback, useState } from 'react';
 import { Dimensions, SafeAreaView } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import Calendar from './src/calendar/components/Calendar';
+import Calendar from 'react-native-full-calendar';
 import { mockData } from './test';
 
 function App(): React.JSX.Element {
