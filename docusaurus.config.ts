@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-    title: 'react-native-full-calendar',
+    title: 'react-native-full-calendars',
     tagline: 'full calendar for react-native users',
     favicon: 'img/favicon.ico',
 
@@ -49,7 +49,7 @@ const config: Config = {
 
     themeConfig: {
         navbar: {
-            title: 'react-native-full-calendar',
+            title: 'react-native-full-calendars',
             logo: {
                 alt: 'Logo',
                 src: 'img/logo.png',
@@ -63,7 +63,7 @@ const config: Config = {
                 },
 
                 {
-                    href: 'https://github.com/nichecoding/react-native-full-calendar',
+                    href: 'https://github.com/nichecoding/react-native-full-calendars',
                     label: 'GitHub',
                     position: 'right',
                 },

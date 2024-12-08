@@ -28,13 +28,13 @@ React Native Full Calendar (RNFC) is an intuitive and powerful calendar componen
 ## 🔌 Installation
 
 ```sh
-$ npm install react-native-full-calendar
+$ npm install react-native-full-calendars
 ```
 
 OR
 
 ```sh
-$ yarn add react-native-full-calendar
+$ yarn add react-native-full-calendars
 ```
 
 ### Dependencies
@@ -53,7 +53,7 @@ Follow installation instructions for [react-native-reanimated](https://github.co
 import React, { useCallback, useState } from 'react';
 import { Dimensions, SafeAreaView } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import Calendar from 'react-native-full-calendar';
+import Calendar from 'react-native-full-calendars';
 import { mockData } from './test';
 
 function App(): React.JSX.Element {
