@@ -5,9 +5,9 @@
 
 ```ts
 type CalendarController = {
-    nextPage: (options?: ImperativeOptions) => void;
-    prevPage: (options?: ImperativeOptions) => void;
-    setPage: (date: Date, options?: ImperativeOptions) => void;
+    goToPrevPage: (options?: ImperativeOptions) => void;
+    goToNextPage: (options?: ImperativeOptions) => void;
+    goToDatePage: (date: Date, options?: ImperativeOptions) => void;
 }
 ```
 
@@ -15,7 +15,7 @@ type CalendarController = {
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| `nextPage` | ([`ImperativeOptions`](./ImperativeOptions.md)?) => `void` | Navigates to the next page in the calendar. |
-| `prevPage` | ([`ImperativeOptions`](./ImperativeOptions.md)?) => `void` | Navigates to the previous page in the calendar. |
-| `setPage` | (`Date`, [`ImperativeOptions`](./ImperativeOptions.md)?) => `void` | Sets the calendar to a specific page corresponding to the given date. |
+| `goToPrevPage` | ([`ImperativeOptions`](./ImperativeOptions.md)?) => `void` | Navigates to the next page in the calendar. |
+| `goToNextPage` | ([`ImperativeOptions`](./ImperativeOptions.md)?) => `void` | Navigates to the previous page in the calendar. |
+| `goToDatePage` | (`Date`, [`ImperativeOptions`](./ImperativeOptions.md)?) => `void` | Sets the calendar to a specific page corresponding to the given date. |
 

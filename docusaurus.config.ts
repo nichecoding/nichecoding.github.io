@@ -48,8 +48,6 @@ const config: Config = {
     ],
 
     themeConfig: {
-        // Replace with your project's social card
-        image: 'img/docusaurus-social-card.jpg',
         navbar: {
             title: 'react-native-full-calendar',
             logo: {
@@ -85,7 +83,7 @@ const config: Config = {
                 },
                 
             ],
-            copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with nichecoding.`,
+            copyright: `Copyright © ${new Date().getFullYear()}, Inc. Built with nichecoding.`,
         },
         prism: {
             theme: prismThemes.github,
