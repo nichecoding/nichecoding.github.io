@@ -18,10 +18,10 @@ React Native Full Calendar (RNFC) is an intuitive and powerful calendar componen
 
 ## 🚀 Features
 
--   Full Monthly Calendar: Displays events on a monthly basis.
--   Event Styling: Add multiple events per day with colors and styles.
--   Multi-Day Events: Visualize events that span across multiple days (e.g., team meetings, vacations).
--   Smooth Scrolling: Scroll seamlessly between months.
+- Full Monthly Calendar: Displays events on a monthly basis.
+- Event Styling: Add multiple events per day with colors and styles.
+- Multi-Day Events: Visualize events that span across multiple days (e.g., team meetings, vacations).
+- Horizontal Scrolling (Currently Supported): The calendar currently supports horizontal scrolling only.
 
 <br/>
 
@@ -50,34 +50,34 @@ Follow installation instructions for [react-native-reanimated](https://github.co
 ## Basic Usage
 
 ```tsx
-import React, { useCallback, useState } from 'react';
-import { Dimensions, SafeAreaView } from 'react-native';
-import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import Calendar from 'react-native-full-calendars';
-import { mockData } from './test';
+import React, { useCallback, useState } from "react";
+import { Dimensions, SafeAreaView } from "react-native";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
+import Calendar from "react-native-full-calendars";
+import { mockData } from "./test";
 
 function App(): React.JSX.Element {
-    const [selectedDate, setSelectedDate] = useState<Date>(new Date());
+  const [selectedDate, setSelectedDate] = useState<Date>(new Date());
 
-    const handlePress = useCallback((date: Date) => {
-        setSelectedDate(date);
-    }, []);
+  const handlePress = useCallback((date: Date) => {
+    setSelectedDate(date);
+  }, []);
 
-    return (
-        <GestureHandlerRootView>
-            <SafeAreaView style={{ flex: 1 }}>
-                <Calendar
-                    selectedDate={selectedDate}
-                    onPageChange={(date) => {
-                        console.log(date);
-                    }}
-                    data={mockData}
-                    onDatePress={handlePress}
-                    width={Dimensions.get('window').width - 20}
-                />
-            </SafeAreaView>
-        </GestureHandlerRootView>
-    );
+  return (
+    <GestureHandlerRootView>
+      <SafeAreaView style={{ flex: 1 }}>
+        <Calendar
+          selectedDate={selectedDate}
+          onPageChange={(date) => {
+            console.log(date);
+          }}
+          data={mockData}
+          onDatePress={handlePress}
+          width={Dimensions.get("window").width - 20}
+        />
+      </SafeAreaView>
+    </GestureHandlerRootView>
+  );
 }
 
 export default App;
